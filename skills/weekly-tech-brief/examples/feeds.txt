@@ -1,0 +1,5 @@
+# One feed per line: "Name | URL" or just "URL". Order here is the order in the brief.
+GitHub Changelog | https://github.blog/changelog/feed/
+Node.js Blog | https://nodejs.org/en/feed/blog.xml
+Python Insider | https://blog.python.org/feeds/posts/default
+Kubernetes Blog | https://kubernetes.io/feed.xml

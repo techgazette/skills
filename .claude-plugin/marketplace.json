@@ -1,0 +1,26 @@
+{
+  "name": "tech-gazette-skills",
+  "owner": {
+    "name": "The Tech Gazette",
+    "email": "hello@techgazette.com.br"
+  },
+  "metadata": {
+    "description": "Agent Skills for developers by The Tech Gazette: sourced, verbatim, no invention.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "developer-skills",
+      "description": "Vendor changelog impact, deprecation deadlines, repo quickstart, primary source check and weekly tech brief.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/vendor-changelog-impact",
+        "./skills/deprecation-deadlines",
+        "./skills/repo-quickstart",
+        "./skills/primary-source-check",
+        "./skills/weekly-tech-brief"
+      ]
+    }
+  ]
+}

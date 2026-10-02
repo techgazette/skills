@@ -1,0 +1,17 @@
+name: validate
+on:
+  push:
+  pull_request:
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Validate SKILL.md frontmatter
+        run: node scripts/validate.mjs
+      - name: Run helper script tests
+        run: |
+          for d in skills/*/scripts; do
+            echo "== $d"
+            (cd "$d" && python3 -m unittest -v) || exit 1
+          done
