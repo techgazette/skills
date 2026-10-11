@@ -1,0 +1,40 @@
+name: weekly-skill
+# Records The Tech Gazette's Skill of the week from the site's public JSON
+# (https://techgazette.com.br/skills/week.json). One commit per changed
+# skill, message built from the JSON; a week with no change makes no commit.
+# Uses only this repository's GITHUB_TOKEN.
+on:
+  schedule:
+    # Mondays 12:17 UTC: after Sunday's post in Sao Paulo and the site's daily build.
+    - cron: "17 12 * * 1"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: weekly-skill
+  cancel-in-progress: false
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 22
+      - name: Test the recorder
+        run: node --test scripts/weekly-skill.test.mjs
+      - name: Record the week's skill
+        run: |
+          git config user.name "The Tech Gazette"
+          git config user.email "hello@techgazette.com.br"
+          node scripts/weekly-skill.mjs --commit
+      - name: Validate
+        run: node scripts/validate.mjs
+      - name: Push
+        run: |
+          if [ "$(git rev-list --count origin/${GITHUB_REF_NAME}..HEAD)" = "0" ]; then
+            echo "Nothing new this week."
+          else
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi

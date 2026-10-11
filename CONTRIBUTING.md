@@ -19,11 +19,19 @@ Thanks for helping. Issues and pull requests are welcome.
 7. Add the skill to `.claude-plugin/marketplace.json`.
 8. No emoji.
 
+## Skill of the week
+
+`weekly/` is written by the `weekly-skill` workflow from https://techgazette.com.br/skills/week.json
+(`scripts/weekly-skill.mjs`). Those folders link to other publishers' skills with their credit and
+license; they copy nothing, so they are not skills of this repository and are not in the plugin.
+Don't edit them by hand; the next run would overwrite them.
+
 ## Before opening a pull request
 
 ```bash
 node scripts/validate.mjs
 for d in skills/*/scripts; do (cd "$d" && python3 -m unittest) || break; done
+node --test scripts/weekly-skill.test.mjs
 ```
 
 Both run in CI on every pull request.
