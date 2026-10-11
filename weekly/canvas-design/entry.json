@@ -1,0 +1,84 @@
+{
+  "name": "canvas-design",
+  "date": "2026-10-11",
+  "summary": "These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files.",
+  "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+  "whenToUse": {
+    "trigger": "You should use this skill when the user asks to create a poster, piece of art, design, or other static piece."
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add anthropics/skills",
+        "/plugin install example-skills@anthropic-agent-skills"
+      ],
+      "firstUse": "After installing the plugin, you can use the skill by just mentioning it.",
+      "url": "https://github.com/anthropics/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/anthropics/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r canvas-design ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Anthropic",
+    "repo": "anthropics/skills",
+    "source": "https://github.com/anthropics/skills/tree/HEAD/skills/canvas-design"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/anthropics/skills/blob/HEAD/skills/canvas-design/LICENSE.txt"
+  },
+  "files": [
+    "LICENSE.txt",
+    "SKILL.md",
+    "canvas-fonts/ArsenalSC-OFL.txt",
+    "canvas-fonts/ArsenalSC-Regular.ttf",
+    "canvas-fonts/BigShoulders-Bold.ttf",
+    "canvas-fonts/BigShoulders-OFL.txt",
+    "canvas-fonts/BigShoulders-Regular.ttf",
+    "canvas-fonts/Boldonse-OFL.txt",
+    "canvas-fonts/Boldonse-Regular.ttf",
+    "canvas-fonts/BricolageGrotesque-Bold.ttf",
+    "canvas-fonts/BricolageGrotesque-OFL.txt",
+    "canvas-fonts/BricolageGrotesque-Regular.ttf",
+    "canvas-fonts/CrimsonPro-Bold.ttf",
+    "canvas-fonts/CrimsonPro-Italic.ttf",
+    "canvas-fonts/CrimsonPro-OFL.txt",
+    "canvas-fonts/CrimsonPro-Regular.ttf",
+    "canvas-fonts/DMMono-OFL.txt",
+    "canvas-fonts/DMMono-Regular.ttf",
+    "canvas-fonts/EricaOne-OFL.txt",
+    "canvas-fonts/EricaOne-Regular.ttf",
+    "canvas-fonts/GeistMono-Bold.ttf",
+    "canvas-fonts/GeistMono-OFL.txt",
+    "canvas-fonts/GeistMono-Regular.ttf",
+    "canvas-fonts/Gloock-OFL.txt",
+    "canvas-fonts/Gloock-Regular.ttf",
+    "canvas-fonts/IBMPlexMono-Bold.ttf",
+    "canvas-fonts/IBMPlexMono-OFL.txt",
+    "canvas-fonts/IBMPlexMono-Regular.ttf",
+    "canvas-fonts/IBMPlexSerif-Bold.ttf",
+    "canvas-fonts/IBMPlexSerif-BoldItalic.ttf",
+    "canvas-fonts/IBMPlexSerif-Italic.ttf",
+    "canvas-fonts/IBMPlexSerif-Regular.ttf",
+    "canvas-fonts/InstrumentSans-Bold.ttf",
+    "canvas-fonts/InstrumentSans-BoldItalic.ttf",
+    "canvas-fonts/InstrumentSans-Italic.ttf",
+    "canvas-fonts/InstrumentSans-OFL.txt",
+    "canvas-fonts/InstrumentSans-Regular.ttf",
+    "canvas-fonts/InstrumentSerif-Italic.ttf",
+    "canvas-fonts/InstrumentSerif-Regular.ttf",
+    "canvas-fonts/Italiana-OFL.txt"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}

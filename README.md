@@ -22,6 +22,18 @@ tools listed at [agentskills.io](https://agentskills.io).
 Every skill has a worked example in its `examples/` folder. Helper scripts use only the
 Python standard library and have tests next to them.
 
+<!-- weekly:start -->
+## Skill of the week
+
+Every week The Tech Gazette picks one Agent Skill from a vendor's official repository. Each is
+linked from [weekly/](weekly/) with what it does, when to use it, how to install it, its credit and
+its license. The skills themselves stay in their publishers' repositories.
+
+| Date | Skill | Source | License | What it does |
+| --- | --- | --- | --- | --- |
+| 2026-10-11 | [canvas-design](weekly/canvas-design/README.md) | [Anthropic](https://github.com/anthropics/skills/tree/HEAD/skills/canvas-design) | Apache-2.0 | These are instructions for creating design philosophies - aesthetic movements that are then EXPRESSED VISUALLY. Output only .md files, .pdf files, and .png files. |
+<!-- weekly:end -->
+
 ## Install
 
 ### Claude Code
