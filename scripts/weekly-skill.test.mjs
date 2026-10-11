@@ -82,3 +82,9 @@ test("writes only weekly/, README and CHANGELOG; a repeat run changes nothing", 
   assert.deepEqual(applySkill(root, s).changed, []);
   assert.ok(!existsSync(join(root, "skills")));
 });
+
+test("the subject uses the description's first sentence", async () => {
+  const { headline } = await import("./weekly-skill.mjs");
+  assert.equal(headline({ summary: "These are instructions. More.", description: "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when asked." }), "Create beautiful visual art in .png and .pdf documents using design philosophy");
+  assert.equal(headline({ summary: "Creating algorithmic art using p5.js." }), "Creating algorithmic art using p5.js");
+});

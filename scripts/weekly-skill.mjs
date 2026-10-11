@@ -219,11 +219,17 @@ export function folderReadme(s) {
   return lines.join("\n") + "\n";
 }
 
+/** The subject's what-it-does: the skill's own description's first sentence (what it makes), else the summary's. */
+export function headline(s) {
+  const first = (t) => oneLine(t ?? "").split(/(?<=[.!?])\s/)[0].replace(/[.!?]$/, "");
+  return first(s.description) || first(s.summary);
+}
+
 /** The commit message for one skill. Throws InputError when a required section is missing or no file changed. */
 export function buildCommitMessage(s, changedFiles, { updated = false } = {}) {
   assertComplete(s);
   if (!changedFiles?.length) fail(`${s.name}: no files changed`);
-  const subject = `${updated ? "Update" : "Add"} ${s.name}: ${oneLine(s.summary)}`;
+  const subject = `${updated ? "Update" : "Add"} ${s.name}: ${headline(s)}`;
   const subj = subject.length > 100 ? `${subject.slice(0, 97).trimEnd()}...` : subject;
   return [subj, "", ...sections(s), "", "## Files added or changed", "", ...changedFiles.map((f) => `- ${f}`), ""].join("\n");
 }
