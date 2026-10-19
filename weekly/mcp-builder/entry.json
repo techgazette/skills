@@ -1,0 +1,54 @@
+{
+  "name": "mcp-builder",
+  "date": "2026-10-18",
+  "summary": "Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools.",
+  "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+  "whenToUse": {
+    "trigger": "Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK)."
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add anthropics/skills",
+        "/plugin install example-skills@anthropic-agent-skills"
+      ],
+      "firstUse": "After installing the plugin, you can use the skill by just mentioning it.",
+      "url": "https://github.com/anthropics/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/anthropics/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r mcp-builder ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Anthropic",
+    "repo": "anthropics/skills",
+    "source": "https://github.com/anthropics/skills/tree/HEAD/skills/mcp-builder"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/anthropics/skills/blob/HEAD/skills/mcp-builder/LICENSE.txt"
+  },
+  "files": [
+    "LICENSE.txt",
+    "SKILL.md",
+    "reference/evaluation.md",
+    "reference/mcp_best_practices.md",
+    "reference/node_mcp_server.md",
+    "reference/python_mcp_server.md",
+    "scripts/connections.py",
+    "scripts/evaluation.py",
+    "scripts/example_evaluation.xml",
+    "scripts/requirements.txt"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}
