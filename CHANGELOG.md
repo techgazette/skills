@@ -2,6 +2,10 @@
 
 Skills of the week recorded here, newest first.
 
+## 2026-10-25
+
+- Added [skill-creator](weekly/skill-creator/README.md) by Anthropic (Apache-2.0): A skill for creating new skills and iteratively improving them.
+
 ## 2026-10-18
 
 - Added [mcp-builder](weekly/mcp-builder/README.md) by Anthropic (Apache-2.0): Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools.

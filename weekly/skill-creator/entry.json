@@ -1,0 +1,62 @@
+{
+  "name": "skill-creator",
+  "date": "2026-10-25",
+  "summary": "A skill for creating new skills and iteratively improving them.",
+  "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+  "whenToUse": {
+    "trigger": "Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy."
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add anthropics/skills",
+        "/plugin install example-skills@anthropic-agent-skills"
+      ],
+      "firstUse": "After installing the plugin, you can use the skill by just mentioning it.",
+      "url": "https://github.com/anthropics/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/anthropics/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r skill-creator ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Anthropic",
+    "repo": "anthropics/skills",
+    "source": "https://github.com/anthropics/skills/tree/HEAD/skills/skill-creator"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/anthropics/skills/blob/HEAD/skills/skill-creator/LICENSE.txt"
+  },
+  "files": [
+    "LICENSE.txt",
+    "SKILL.md",
+    "agents/analyzer.md",
+    "agents/comparator.md",
+    "agents/grader.md",
+    "assets/eval_review.html",
+    "eval-viewer/generate_review.py",
+    "eval-viewer/viewer.html",
+    "references/schemas.md",
+    "scripts/__init__.py",
+    "scripts/aggregate_benchmark.py",
+    "scripts/generate_report.py",
+    "scripts/improve_description.py",
+    "scripts/package_skill.py",
+    "scripts/quick_validate.py",
+    "scripts/run_eval.py",
+    "scripts/run_loop.py",
+    "scripts/utils.py"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}
