@@ -1,0 +1,51 @@
+{
+  "name": "slack-gif-creator",
+  "date": "2026-11-01",
+  "summary": "A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.",
+  "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+  "whenToUse": {
+    "trigger": "Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\""
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add anthropics/skills",
+        "/plugin install example-skills@anthropic-agent-skills"
+      ],
+      "firstUse": "After installing the plugin, you can use the skill by just mentioning it.",
+      "url": "https://github.com/anthropics/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/anthropics/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r slack-gif-creator ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Anthropic",
+    "repo": "anthropics/skills",
+    "source": "https://github.com/anthropics/skills/tree/HEAD/skills/slack-gif-creator"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/anthropics/skills/blob/HEAD/skills/slack-gif-creator/LICENSE.txt"
+  },
+  "files": [
+    "LICENSE.txt",
+    "SKILL.md",
+    "core/easing.py",
+    "core/frame_composer.py",
+    "core/gif_builder.py",
+    "core/validators.py",
+    "requirements.txt"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}

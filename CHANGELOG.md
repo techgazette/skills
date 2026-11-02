@@ -2,6 +2,10 @@
 
 Skills of the week recorded here, newest first.
 
+## 2026-11-01
+
+- Added [slack-gif-creator](weekly/slack-gif-creator/README.md) by Anthropic (Apache-2.0): A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.
+
 ## 2026-10-25
 
 - Added [skill-creator](weekly/skill-creator/README.md) by Anthropic (Apache-2.0): A skill for creating new skills and iteratively improving them.
