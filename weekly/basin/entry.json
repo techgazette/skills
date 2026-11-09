@@ -1,0 +1,61 @@
+{
+  "name": "basin",
+  "date": "2026-11-08",
+  "summary": "Basin ingests and transforms events, manages Apache Iceberg tables in R2, and queries them with distributed SQL.",
+  "description": "Build and troubleshoot Cloudflare Basin analytics workflows with Basin Pipelines, Basin Catalog, and Basin SQL. Use for streaming data into R2 Iceberg tables, managing catalogs, or querying those tables; also use for requests using the former Data Platform, Pipelines, R2 Data Catalog, or R2 SQL names.",
+  "whenToUse": {
+    "trigger": "Use for streaming data into R2 Iceberg tables, managing catalogs, or querying those tables; also use for requests using the former Data Platform, Pipelines, R2 Data Catalog, or R2 SQL names."
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add cloudflare/skills",
+        "/plugin install cloudflare@cloudflare"
+      ],
+      "firstUse": "Skills are contextual and auto-loaded based on your conversation.",
+      "url": "https://github.com/cloudflare/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/cloudflare/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r basin ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Cloudflare",
+    "repo": "cloudflare/skills",
+    "source": "https://github.com/cloudflare/skills/tree/HEAD/skills/basin"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/cloudflare/skills/blob/HEAD/LICENSE"
+  },
+  "files": [
+    "SKILL.md",
+    "references/catalog/README.md",
+    "references/catalog/api.md",
+    "references/catalog/configuration.md",
+    "references/catalog/gotchas.md",
+    "references/catalog/patterns.md",
+    "references/pipelines/README.md",
+    "references/pipelines/api.md",
+    "references/pipelines/configuration.md",
+    "references/pipelines/gotchas.md",
+    "references/pipelines/patterns.md",
+    "references/skill-feedback.md",
+    "references/sql/README.md",
+    "references/sql/api.md",
+    "references/sql/configuration.md",
+    "references/sql/gotchas.md",
+    "references/sql/patterns.md"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}

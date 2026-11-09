@@ -2,6 +2,10 @@
 
 Skills of the week recorded here, newest first.
 
+## 2026-11-08
+
+- Added [basin](weekly/basin/README.md) by Cloudflare (Apache-2.0): Basin ingests and transforms events, manages Apache Iceberg tables in R2, and queries them with distributed SQL.
+
 ## 2026-11-01
 
 - Added [slack-gif-creator](weekly/slack-gif-creator/README.md) by Anthropic (Apache-2.0): A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack.
