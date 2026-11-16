@@ -1,0 +1,46 @@
+{
+  "name": "cf-cli",
+  "date": "2026-11-15",
+  "summary": "Prefer retrieval over pre-trained knowledge. Describe the task to cf cli search, inspect the match with cf schema or --help, and preview with --dry-run before running a command you have not verified.",
+  "description": "Cloudflare's official cf CLI (beta) for the public Cloudflare API and Workers projects. Use for finding and running Cloudflare commands from the terminal — sign-in and profiles, cf cli search, cf schema, cf deploy/dev/build, resource commands for DNS, zones, D1, KV, and R2 — and for choosing between cf and Wrangler in a project.",
+  "whenToUse": {
+    "trigger": "Use for finding and running Cloudflare commands from the terminal — sign-in and profiles, cf cli search, cf schema, cf deploy/dev/build, resource commands for DNS, zones, D1, KV, and R2 — and for choosing between cf and Wrangler in a project."
+  },
+  "install": {
+    "readme": {
+      "agent": "Claude Code",
+      "lines": [
+        "/plugin marketplace add cloudflare/skills",
+        "/plugin install cloudflare@cloudflare"
+      ],
+      "firstUse": "Skills are contextual and auto-loaded based on your conversation.",
+      "url": "https://github.com/cloudflare/skills#readme"
+    },
+    "copy": [
+      {
+        "agent": "Claude Code",
+        "docs": "https://code.claude.com/docs/en/skills",
+        "lines": [
+          "git clone https://github.com/cloudflare/skills",
+          "cd skills/skills",
+          "mkdir -p ~/.claude/skills",
+          "cp -r cf-cli ~/.claude/skills/"
+        ]
+      }
+    ]
+  },
+  "credit": {
+    "vendor": "Cloudflare",
+    "repo": "cloudflare/skills",
+    "source": "https://github.com/cloudflare/skills/tree/HEAD/skills/cf-cli"
+  },
+  "license": {
+    "spdx": "Apache-2.0",
+    "file": "https://github.com/cloudflare/skills/blob/HEAD/LICENSE"
+  },
+  "files": [
+    "SKILL.md",
+    "references/skill-feedback.md"
+  ],
+  "url": "https://techgazette.com.br/skills/"
+}

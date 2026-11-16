@@ -31,6 +31,7 @@ its license. The skills themselves stay in their publishers' repositories.
 
 | Date | Skill | Source | License | What it does |
 | --- | --- | --- | --- | --- |
+| 2026-11-15 | [cf-cli](weekly/cf-cli/README.md) | [Cloudflare](https://github.com/cloudflare/skills/tree/HEAD/skills/cf-cli) | Apache-2.0 | Prefer retrieval over pre-trained knowledge. Describe the task to cf cli search, inspect the match with cf schema or --help, and preview with --dry-run before running a command you have not verified. |
 | 2026-11-08 | [basin](weekly/basin/README.md) | [Cloudflare](https://github.com/cloudflare/skills/tree/HEAD/skills/basin) | Apache-2.0 | Basin ingests and transforms events, manages Apache Iceberg tables in R2, and queries them with distributed SQL. |
 | 2026-11-01 | [slack-gif-creator](weekly/slack-gif-creator/README.md) | [Anthropic](https://github.com/anthropics/skills/tree/HEAD/skills/slack-gif-creator) | Apache-2.0 | A toolkit providing utilities and knowledge for creating animated GIFs optimized for Slack. |
 | 2026-10-25 | [skill-creator](weekly/skill-creator/README.md) | [Anthropic](https://github.com/anthropics/skills/tree/HEAD/skills/skill-creator) | Apache-2.0 | A skill for creating new skills and iteratively improving them. |

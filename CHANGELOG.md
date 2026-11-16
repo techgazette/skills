@@ -2,6 +2,10 @@
 
 Skills of the week recorded here, newest first.
 
+## 2026-11-15
+
+- Added [cf-cli](weekly/cf-cli/README.md) by Cloudflare (Apache-2.0): Prefer retrieval over pre-trained knowledge. Describe the task to cf cli search, inspect the match with cf schema or --help, and preview with --dry-run before running a command you have not verified.
+
 ## 2026-11-08
 
 - Added [basin](weekly/basin/README.md) by Cloudflare (Apache-2.0): Basin ingests and transforms events, manages Apache Iceberg tables in R2, and queries them with distributed SQL.
